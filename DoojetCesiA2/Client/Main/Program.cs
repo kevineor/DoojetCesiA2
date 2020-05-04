@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Client
+namespace DoojetCesiA2
 {
-    static class main
+    static class Program
     {
         /// <summary>
         /// Point d'entrée principal de l'application.

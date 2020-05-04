@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Client
+namespace DoojetCesiA2
 {
     public partial class mainFrame : Form
     {
@@ -16,7 +16,7 @@ namespace Client
             InitializeComponent();
         }
 
-        private void mainFrame_Load(object sender, EventArgs e)
+        private void formAuth1_Load(object sender, EventArgs e)
         {
 
         }

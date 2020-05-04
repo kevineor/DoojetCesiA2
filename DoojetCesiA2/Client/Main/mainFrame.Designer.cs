@@ -1,16 +1,16 @@
-﻿namespace Client
+﻿namespace DoojetCesiA2
 {
     partial class mainFrame
     {
         /// <summary>
-        /// Variable nécessaire au concepteur.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,29 +20,39 @@
             base.Dispose(disposing);
         }
 
-        #region Code généré par le Concepteur Windows Form
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            this.formAuth2 = new DoojetCesiA2.FormAuth();
             this.SuspendLayout();
+            // 
+            // formAuth2
+            // 
+            this.formAuth2.Location = new System.Drawing.Point(346, 168);
+            this.formAuth2.Name = "formAuth2";
+            this.formAuth2.Size = new System.Drawing.Size(108, 178);
+            this.formAuth2.TabIndex = 0;
             // 
             // mainFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.formAuth2);
             this.Name = "mainFrame";
-            this.Text = "Doojet";
-            this.Load += new System.EventHandler(this.mainFrame_Load);
+            this.Text = "mainFrame";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private DoojetCesiA2.FormAuth formAuth1;
+        private FormAuth formAuth2;
     }
 }
-

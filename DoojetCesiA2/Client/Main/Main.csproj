@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F36FF084-2ACE-4071-98F5-1579308FA269}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Client</RootNamespace>
-    <AssemblyName>Client</AssemblyName>
+    <RootNamespace>DoojetCesiA2</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -49,8 +49,17 @@
     <Compile Include="mainFrame.Designer.cs">
       <DependentUpon>mainFrame.cs</DependentUpon>
     </Compile>
-    <Compile Include="main.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormAuth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormAuth.Designer.cs">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAuth.resx">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainFrame.resx">
       <DependentUpon>mainFrame.cs</DependentUpon>
     </EmbeddedResource>
@@ -62,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -72,6 +82,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\STR_MESSAGES\STR_MESSAGES.csproj">
+      <Project>{d041c627-d310-49b1-baf6-84a6bf638f02}</Project>
+      <Name>STR_MESSAGES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CUT\CUT.csproj">
+      <Project>{5505e19f-4e64-43a9-901d-8a83c1814314}</Project>
+      <Name>CUT</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

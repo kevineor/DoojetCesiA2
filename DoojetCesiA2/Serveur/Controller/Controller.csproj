@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>ddec3118-3242-4e93-94f5-04e51a5c4d62</ProjectGuid>
+    <ProjectGuid>{DDEC3118-3242-4E93-94F5-04E51A5C4D62}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Controller</RootNamespace>
@@ -31,20 +31,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AuthentifierV1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\STR_MESSAGES\STR_MESSAGES.csproj">
+      <Project>{d041c627-d310-49b1-baf6-84a6bf638f02}</Project>
+      <Name>STR_MESSAGES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAD\CAD.csproj">
+      <Project>{aa1d6fd0-c191-4e0c-9b7b-87707c1adc02}</Project>
+      <Name>CAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CM\CM.csproj">
+      <Project>{87fe3019-301b-48de-a53e-a5c2a3132d9a}</Project>
+      <Name>CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EM\EM.csproj">
+      <Project>{dd725c2f-eda1-4105-94b9-68f202746399}</Project>
+      <Name>EM</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
