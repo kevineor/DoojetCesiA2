@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace Client
 {
-    public partial class Form1 : Form
+    public partial class mainFrame : Form
     {
-        public Form1()
+        public mainFrame()
         {
             InitializeComponent();
+        }
+
+        private void mainFrame_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

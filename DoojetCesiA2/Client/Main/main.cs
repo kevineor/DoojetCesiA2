@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Client
 {
-    static class Program
+    static class main
     {
         /// <summary>
         /// Point d'entrée principal de l'application.
@@ -15,7 +15,7 @@ namespace Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new mainFrame());
         }
     }
 }
