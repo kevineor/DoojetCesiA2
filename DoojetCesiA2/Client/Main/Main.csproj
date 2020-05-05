@@ -57,6 +57,12 @@
     <Compile Include="FormAuth.Designer.cs">
       <DependentUpon>FormAuth.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFacture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormFacture.Designer.cs">
+      <DependentUpon>FormFacture.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAuth.resx">
       <DependentUpon>FormAuth.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,6 +79,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="FormFacture.resx">
+      <DependentUpon>FormFacture.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
