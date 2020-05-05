@@ -63,6 +63,12 @@
     <Compile Include="FormFacture.Designer.cs">
       <DependentUpon>FormFacture.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAffichage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormAffichage.Designer.cs">
+      <DependentUpon>FormAffichage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAuth.resx">
       <DependentUpon>FormAuth.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="FormFacture.resx">
       <DependentUpon>FormFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAffichage.resx">
+      <DependentUpon>FormAffichage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
