@@ -53,6 +53,6 @@
         #endregion
 
         private DoojetCesiA2.FormAuth formAuth1;
-        private FormAuth formAuth2;
+        private DoojetCesiA2.FormAuth formAuth2;
     }
 }
