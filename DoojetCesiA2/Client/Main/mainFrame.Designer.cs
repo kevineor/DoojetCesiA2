@@ -37,6 +37,7 @@ namespace DoojetCesiA2
             this.BoutonFacture = new System.Windows.Forms.Button();
             this.boutonDéconnexion = new System.Windows.Forms.Button();
             this.formAuth1 = new DoojetCesiA2.FormAuth();
+            this.BoutonReservation = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@ namespace DoojetCesiA2
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.BoutonReservation);
             this.panel1.Controls.Add(this.BoutonNeFaitRien2);
             this.panel1.Controls.Add(this.BoutonNefaitRien1);
             this.panel1.Controls.Add(this.BoutonFacture);
@@ -62,7 +64,7 @@ namespace DoojetCesiA2
             // 
             // BoutonNeFaitRien2
             // 
-            this.BoutonNeFaitRien2.Location = new System.Drawing.Point(31, 401);
+            this.BoutonNeFaitRien2.Location = new System.Drawing.Point(31, 429);
             this.BoutonNeFaitRien2.Name = "BoutonNeFaitRien2";
             this.BoutonNeFaitRien2.Size = new System.Drawing.Size(134, 50);
             this.BoutonNeFaitRien2.TabIndex = 6;
@@ -71,7 +73,7 @@ namespace DoojetCesiA2
             // 
             // BoutonNefaitRien1
             // 
-            this.BoutonNefaitRien1.Location = new System.Drawing.Point(31, 294);
+            this.BoutonNefaitRien1.Location = new System.Drawing.Point(31, 337);
             this.BoutonNefaitRien1.Name = "BoutonNefaitRien1";
             this.BoutonNefaitRien1.Size = new System.Drawing.Size(134, 50);
             this.BoutonNefaitRien1.TabIndex = 5;
@@ -80,7 +82,7 @@ namespace DoojetCesiA2
             // 
             // BoutonFacture
             // 
-            this.BoutonFacture.Location = new System.Drawing.Point(31, 176);
+            this.BoutonFacture.Location = new System.Drawing.Point(31, 154);
             this.BoutonFacture.Name = "BoutonFacture";
             this.BoutonFacture.Size = new System.Drawing.Size(134, 50);
             this.BoutonFacture.TabIndex = 4;
@@ -105,6 +107,15 @@ namespace DoojetCesiA2
             this.formAuth1.Name = "formAuth1";
             this.formAuth1.Size = new System.Drawing.Size(279, 234);
             this.formAuth1.TabIndex = 3;
+            // 
+            // BoutonReservation
+            // 
+            this.BoutonReservation.Location = new System.Drawing.Point(31, 245);
+            this.BoutonReservation.Name = "BoutonReservation";
+            this.BoutonReservation.Size = new System.Drawing.Size(134, 50);
+            this.BoutonReservation.TabIndex = 7;
+            this.BoutonReservation.Text = "Réservations";
+            this.BoutonReservation.UseVisualStyleBackColor = true;
             // 
             // mainFrame
             // 
@@ -131,6 +142,6 @@ namespace DoojetCesiA2
         private System.Windows.Forms.Button BoutonNefaitRien1;
         private System.Windows.Forms.Button BoutonFacture;
         private System.Windows.Forms.Button boutonDéconnexion;
-        
+        private System.Windows.Forms.Button BoutonReservation;
     }
 }

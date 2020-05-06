@@ -36,6 +36,8 @@
             this.LabelDateDebut = new System.Windows.Forms.Label();
             this.LabelDateFin = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.checkBoxClient = new System.Windows.Forms.CheckBox();
+            this.checkBoxDate = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,9 +63,9 @@
             // 
             // boutonRecherche
             // 
-            this.boutonRecherche.Location = new System.Drawing.Point(33, 140);
+            this.boutonRecherche.Location = new System.Drawing.Point(588, 140);
             this.boutonRecherche.Name = "boutonRecherche";
-            this.boutonRecherche.Size = new System.Drawing.Size(776, 57);
+            this.boutonRecherche.Size = new System.Drawing.Size(221, 57);
             this.boutonRecherche.TabIndex = 2;
             this.boutonRecherche.Text = "Lancer la recherche";
             this.boutonRecherche.UseVisualStyleBackColor = true;
@@ -108,10 +110,32 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(220, 22);
             this.dateTimePicker2.TabIndex = 7;
             // 
+            // checkBoxClient
+            // 
+            this.checkBoxClient.AutoSize = true;
+            this.checkBoxClient.Location = new System.Drawing.Point(33, 159);
+            this.checkBoxClient.Name = "checkBoxClient";
+            this.checkBoxClient.Size = new System.Drawing.Size(112, 21);
+            this.checkBoxClient.TabIndex = 8;
+            this.checkBoxClient.Text = "Client unique";
+            this.checkBoxClient.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDate
+            // 
+            this.checkBoxDate.AutoSize = true;
+            this.checkBoxDate.Location = new System.Drawing.Point(283, 159);
+            this.checkBoxDate.Name = "checkBoxDate";
+            this.checkBoxDate.Size = new System.Drawing.Size(106, 21);
+            this.checkBoxDate.TabIndex = 9;
+            this.checkBoxDate.Text = "Date définie";
+            this.checkBoxDate.UseVisualStyleBackColor = true;
+            // 
             // FormFacture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkBoxDate);
+            this.Controls.Add(this.checkBoxClient);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.LabelDateFin);
             this.Controls.Add(this.LabelDateDebut);
@@ -138,5 +162,7 @@
         private System.Windows.Forms.Label LabelDateDebut;
         private System.Windows.Forms.Label LabelDateFin;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.CheckBox checkBoxClient;
+        private System.Windows.Forms.CheckBox checkBoxDate;
     }
 }
