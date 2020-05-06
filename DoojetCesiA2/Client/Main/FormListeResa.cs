@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace DoojetCesiA2
 {
-    public partial class UserControl1 : UserControl
+    public partial class FormListeResa : UserControl
     {
-        public UserControl1()
+        public FormListeResa()
         {
             InitializeComponent();
         }

@@ -30,24 +30,17 @@ namespace DoojetCesiA2
         /// </summary>
         private void InitializeComponent()
         {
-            this.formFacture1 = new DoojetCesiA2.FormFacture();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BoutonReservation = new System.Windows.Forms.Button();
             this.BoutonNeFaitRien2 = new System.Windows.Forms.Button();
             this.BoutonNefaitRien1 = new System.Windows.Forms.Button();
             this.BoutonFacture = new System.Windows.Forms.Button();
             this.boutonDéconnexion = new System.Windows.Forms.Button();
             this.formAuth1 = new DoojetCesiA2.FormAuth();
-            this.BoutonReservation = new System.Windows.Forms.Button();
+            this.formFacture1 = new DoojetCesiA2.FormFacture();
+            this.formListeResa1 = new DoojetCesiA2.FormListeResa();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // formFacture1
-            // 
-            this.formFacture1.Location = new System.Drawing.Point(203, 48);
-            this.formFacture1.Name = "formFacture1";
-            this.formFacture1.Size = new System.Drawing.Size(852, 452);
-            this.formFacture1.TabIndex = 1;
-            this.formFacture1.Load += new System.EventHandler(this.formFacture1_Load);
             // 
             // panel1
             // 
@@ -61,6 +54,16 @@ namespace DoojetCesiA2
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 554);
             this.panel1.TabIndex = 2;
+            // 
+            // BoutonReservation
+            // 
+            this.BoutonReservation.Location = new System.Drawing.Point(31, 245);
+            this.BoutonReservation.Name = "BoutonReservation";
+            this.BoutonReservation.Size = new System.Drawing.Size(134, 50);
+            this.BoutonReservation.TabIndex = 7;
+            this.BoutonReservation.Text = "Réservations";
+            this.BoutonReservation.UseVisualStyleBackColor = true;
+            this.BoutonReservation.Click += new System.EventHandler(this.BoutonReservation_Click);
             // 
             // BoutonNeFaitRien2
             // 
@@ -108,20 +111,27 @@ namespace DoojetCesiA2
             this.formAuth1.Size = new System.Drawing.Size(279, 234);
             this.formAuth1.TabIndex = 3;
             // 
-            // BoutonReservation
+            // formFacture1
             // 
-            this.BoutonReservation.Location = new System.Drawing.Point(31, 245);
-            this.BoutonReservation.Name = "BoutonReservation";
-            this.BoutonReservation.Size = new System.Drawing.Size(134, 50);
-            this.BoutonReservation.TabIndex = 7;
-            this.BoutonReservation.Text = "Réservations";
-            this.BoutonReservation.UseVisualStyleBackColor = true;
+            this.formFacture1.Location = new System.Drawing.Point(203, 48);
+            this.formFacture1.Name = "formFacture1";
+            this.formFacture1.Size = new System.Drawing.Size(852, 452);
+            this.formFacture1.TabIndex = 1;
+            this.formFacture1.Load += new System.EventHandler(this.formFacture1_Load);
+            // 
+            // formListeResa1
+            // 
+            this.formListeResa1.Location = new System.Drawing.Point(266, 81);
+            this.formListeResa1.Name = "formListeResa1";
+            this.formListeResa1.Size = new System.Drawing.Size(682, 398);
+            this.formListeResa1.TabIndex = 4;
             // 
             // mainFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.formListeResa1);
             this.Controls.Add(this.formAuth1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.formFacture1);
@@ -143,5 +153,6 @@ namespace DoojetCesiA2
         private System.Windows.Forms.Button BoutonFacture;
         private System.Windows.Forms.Button boutonDéconnexion;
         private System.Windows.Forms.Button BoutonReservation;
+        private FormListeResa formListeResa1;
     }
 }

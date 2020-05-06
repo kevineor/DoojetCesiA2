@@ -30,6 +30,7 @@ namespace DoojetCesiA2
         {
             formAuth1.Show();
             formFacture1.Hide();
+            formListeResa1.Hide();
         }
 
         private void formAffichage1_Load(object sender, EventArgs e)
@@ -41,11 +42,20 @@ namespace DoojetCesiA2
         {
             formAuth1.Show();
             formFacture1.Hide();
+            formListeResa1.Hide();
         }
 
         private void BoutonFacture_Click(object sender, EventArgs e)
         {
             formFacture1.Show();
+            formAuth1.Hide();
+            formListeResa1.Hide();
+        }
+
+        private void BoutonReservation_Click(object sender, EventArgs e)
+        {
+            formListeResa1.Show();
+            formFacture1.Hide();
             formAuth1.Hide();
         }
     }

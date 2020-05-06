@@ -69,11 +69,11 @@
     <Compile Include="FormAffichage.Designer.cs">
       <DependentUpon>FormAffichage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1.cs">
+    <Compile Include="FormListeResa.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="FormListeResa.Designer.cs">
+      <DependentUpon>FormListeResa.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormAuth.resx">
       <DependentUpon>FormAuth.cs</DependentUpon>
@@ -97,8 +97,8 @@
     <EmbeddedResource Include="FormAffichage.resx">
       <DependentUpon>FormAffichage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="FormListeResa.resx">
+      <DependentUpon>FormListeResa.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
