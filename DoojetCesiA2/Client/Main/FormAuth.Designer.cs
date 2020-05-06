@@ -40,7 +40,7 @@
             // txt_username
             // 
             this.txt_username.Location = new System.Drawing.Point(119, 87);
-            this.txt_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(4);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(132, 22);
             this.txt_username.TabIndex = 0;
@@ -48,7 +48,7 @@
             // txt_password
             // 
             this.txt_password.Location = new System.Drawing.Point(119, 131);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '♫';
             this.txt_password.Size = new System.Drawing.Size(132, 22);
@@ -56,8 +56,8 @@
             // 
             // btn_auth
             // 
-            this.btn_auth.Location = new System.Drawing.Point(64, 182);
-            this.btn_auth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_auth.Location = new System.Drawing.Point(72, 182);
+            this.btn_auth.Margin = new System.Windows.Forms.Padding(4);
             this.btn_auth.Name = "btn_auth";
             this.btn_auth.Size = new System.Drawing.Size(133, 28);
             this.btn_auth.TabIndex = 2;
@@ -81,7 +81,7 @@
             this.LabelAuthentification.AutoSize = true;
             this.LabelAuthentification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LabelAuthentification.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAuthentification.Location = new System.Drawing.Point(39, 24);
+            this.LabelAuthentification.Location = new System.Drawing.Point(40, 24);
             this.LabelAuthentification.Name = "LabelAuthentification";
             this.LabelAuthentification.Size = new System.Drawing.Size(197, 29);
             this.LabelAuthentification.TabIndex = 4;
@@ -118,9 +118,9 @@
             this.Controls.Add(this.btn_auth);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_username);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAuth";
-            this.Size = new System.Drawing.Size(277, 244);
+            this.Size = new System.Drawing.Size(277, 291);
             this.Load += new System.EventHandler(this.FormAuth_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

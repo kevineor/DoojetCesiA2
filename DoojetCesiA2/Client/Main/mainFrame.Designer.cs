@@ -39,7 +39,9 @@ namespace DoojetCesiA2
             this.formAuth1 = new DoojetCesiA2.FormAuth();
             this.formFacture1 = new DoojetCesiA2.FormFacture();
             this.formListeResa1 = new DoojetCesiA2.FormListeResa();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -105,10 +107,11 @@ namespace DoojetCesiA2
             // 
             // formAuth1
             // 
-            this.formAuth1.Location = new System.Drawing.Point(382, 130);
+            this.formAuth1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.formAuth1.Location = new System.Drawing.Point(398, 127);
             this.formAuth1.Margin = new System.Windows.Forms.Padding(4);
             this.formAuth1.Name = "formAuth1";
-            this.formAuth1.Size = new System.Drawing.Size(279, 234);
+            this.formAuth1.Size = new System.Drawing.Size(272, 301);
             this.formAuth1.TabIndex = 3;
             // 
             // formFacture1
@@ -121,18 +124,29 @@ namespace DoojetCesiA2
             // 
             // formListeResa1
             // 
-            this.formListeResa1.Location = new System.Drawing.Point(266, 81);
+            this.formListeResa1.Location = new System.Drawing.Point(566, 12);
             this.formListeResa1.Name = "formListeResa1";
             this.formListeResa1.Size = new System.Drawing.Size(682, 398);
             this.formListeResa1.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.formAuth1);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1069, 554);
+            this.panel2.TabIndex = 5;
             // 
             // mainFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.formListeResa1);
-            this.Controls.Add(this.formAuth1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.formFacture1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -140,12 +154,12 @@ namespace DoojetCesiA2
             this.Text = "mainFrame";
             this.Load += new System.EventHandler(this.mainFrame_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private FormAuth formAuth1;
         public DoojetCesiA2.FormFacture formFacture1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BoutonNeFaitRien2;
@@ -154,5 +168,7 @@ namespace DoojetCesiA2
         private System.Windows.Forms.Button boutonDéconnexion;
         private System.Windows.Forms.Button BoutonReservation;
         private FormListeResa formListeResa1;
+        private FormAuth formAuth1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
