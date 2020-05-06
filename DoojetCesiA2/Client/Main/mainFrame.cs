@@ -58,5 +58,15 @@ namespace DoojetCesiA2
             formFacture1.Hide();
             formAuth1.Hide();
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
