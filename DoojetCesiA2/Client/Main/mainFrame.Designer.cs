@@ -33,7 +33,7 @@
             // 
             // formAuth2
             // 
-            this.formAuth2.Location = new System.Drawing.Point(346, 168);
+            this.formAuth2.Location = new System.Drawing.Point(331, 107);
             this.formAuth2.Name = "formAuth2";
             this.formAuth2.Size = new System.Drawing.Size(108, 178);
             this.formAuth2.TabIndex = 0;
@@ -53,6 +53,6 @@
         #endregion
 
         private DoojetCesiA2.FormAuth formAuth1;
-        private FormAuth formAuth2;
+        private DoojetCesiA2.FormAuth formAuth2;
     }
 }

@@ -54,7 +54,7 @@
             this.btn_auth.Name = "btn_auth";
             this.btn_auth.Size = new System.Drawing.Size(100, 23);
             this.btn_auth.TabIndex = 2;
-            this.btn_auth.Text = "button1";
+            this.btn_auth.Text = "Se connecter";
             this.btn_auth.UseVisualStyleBackColor = true;
             this.btn_auth.Click += new System.EventHandler(this.btn_auth_Click);
             // 
